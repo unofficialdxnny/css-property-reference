@@ -17,17 +17,16 @@ main {
 }
 
 #property-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
 }
 
 .property {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 5px;
-    margin: 0.5rem;
     padding: 1rem;
-    width: calc(33% - 2rem);
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
