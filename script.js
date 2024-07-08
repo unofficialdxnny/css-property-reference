@@ -204,7 +204,37 @@ document.addEventListener("DOMContentLoaded", () => {
             name: "list-style-image",
             description: "Specifies an image as the list-item marker.",
             usage: "list-style-image: url|none|initial|inherit;"
-        }
+        },
+         {
+        name: "border-color",
+        description: "Sets the color of the border.",
+        usage: "border-color: color|transparent|initial|inherit;"
+    },
+    {
+        name: "box-sizing",
+        description: "Defines how the width and height of an element are calculated.",
+        usage: "box-sizing: content-box|border-box|initial|inherit;"
+    },
+    {
+        name: "text-shadow",
+        description: "Adds shadow to text.",
+        usage: "text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;"
+    },
+    {
+        name: "outline",
+        description: "Sets the width, style, and color for an outline.",
+        usage: "outline: width style color|initial|inherit;"
+    },
+    {
+        name: "transition",
+        description: "Specifies the transition properties for an element.",
+        usage: "transition: property duration timing-function delay|initial|inherit;"
+    },
+    {
+        name: "transform",
+        description: "Applies a 2D or 3D transformation to an element.",
+        usage: "transform: transform-function|none|initial|inherit;"
+    },
     ];
 
     const propertyList = document.getElementById("property-list");
