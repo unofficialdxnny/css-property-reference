@@ -40,6 +40,9 @@ main {
     padding: 1.5rem;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden; /* Ensure content stays within the card */
+    display: flex;
+    flex-direction: column;
 }
 
 .property:hover {
@@ -56,6 +59,7 @@ main {
 .property p {
     margin: 0.5rem 0 0;
     line-height: 1.6;
+    flex: 1; /* Ensure paragraphs take available space */
 }
 
 .property code {
@@ -64,4 +68,5 @@ main {
     border-radius: 5px;
     font-size: 0.9rem;
     color: #d63384;
+    word-wrap: break-word; /* Break long lines of code if necessary */
 }
